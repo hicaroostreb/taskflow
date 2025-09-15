@@ -1,0 +1,135 @@
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 32px;
+  background: #19191a;
+  border-radius: 20px;
+  box-shadow: 0 6px 40px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fafafa;
+}
+
+.auth-container h1 {
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.auth-container p {
+  color: #ccc;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.google-button {
+  width: 100%;
+  background-color: #222;
+  border: 1px solid #333;
+  color: #ebebeb;
+  font-weight: 600;
+  padding: 10px 0;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.google-button:hover:not(:disabled) {
+  background-color: #333;
+}
+
+.separator {
+  margin: 20px 0;
+  color: #999;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  background: #444;
+  height: 1px;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+}
+
+.separator::before {
+  left: 0;
+}
+
+.separator::after {
+  right: 0;
+}
+
+.auth-input {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 12px 10px;
+  border: 1.5px solid #333;
+  border-radius: 7px;
+  font-size: 1rem;
+  background: #232323;
+  color: #fafafa;
+  transition: border-color 0.2s ease;
+}
+
+.auth-input::placeholder {
+  color: #999;
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: #5894fe;
+}
+
+.auth-button {
+  width: 100%;
+  background-color: #5894fe;
+  color: white;
+  font-weight: 700;
+  padding: 12px 0;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.auth-button:disabled {
+  background-color: #a0c4ff;
+  cursor: not-allowed;
+}
+
+.auth-button:not(:disabled):hover {
+  background-color: #3b70d6;
+}
+
+.error-message {
+  width: 100%;
+  background-color: #ff4444;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.auth-container p a {
+  color: #5894fe;
+  text-decoration: underline;
+  cursor: pointer;
+}

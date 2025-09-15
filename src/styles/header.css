@@ -1,0 +1,31 @@
+header {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+header nav a {
+  margin-right: 1.5rem;
+  color: #3b82f6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+header nav a:last-child {
+  margin-right: 0;
+  color: #64748b;
+}
+
+header button {
+  background-color: #ef4444;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
